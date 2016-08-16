@@ -13,6 +13,8 @@
     NSString *_age;
     NSString *_interests;
     NSString *_citizenship;
+    NSArray *_dogs;
+    NSString *_daughter;
 }
 
 - (NSString *)name;
@@ -26,5 +28,10 @@
 
 - (NSString *)citizenship;
 - (void)setCitizenship:(NSString *)citizenship;
+
+- (NSArray *)dogs;
+- (void)setDogs: (NSArray *)dogs;
+
+- (void)setDaughter: Darwin;
 
 @end
