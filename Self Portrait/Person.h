@@ -11,7 +11,7 @@
 @interface Person : NSObject {
     NSString *_name;
     NSString *_age;
-    NSArray *_interests;
+    NSString *_interests;
     NSString *_citizenship;
 }
 
@@ -21,8 +21,8 @@
 - (NSString *)age;
 - (void)setAge:(NSString *)age;
 
-- (NSArray *)interests;
-- (void)setInterests:(NSArray *)interests;
+- (NSString *)interests;
+- (void)setInterests:(NSString *)interests;
 
 - (NSString *)citizenship;
 - (void)setCitizenship:(NSString *)citizenship;

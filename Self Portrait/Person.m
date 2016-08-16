@@ -11,7 +11,7 @@
 @implementation Person 
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"There exists an excellent fellow by the name of %@. %@ has reached the ripe old age of %@.", [self name], [self name], [self age]];
+    return [NSString stringWithFormat:@"There exists an excellent fellow by the name of %@. %@ has reached the ripe old age of %@. %@'s interests include %@. \n\n", [self name], [self name], [self age], [self name], [self interests]];
 }
 
 - (NSString *)name {
@@ -28,6 +28,22 @@
 
 - (void)setAge:(NSString *)age {
     _age = age;
+}
+
+- (NSString *)interests {
+    return _interests;
+}
+
+- (void)setInterests:(NSString *)interests {
+    _interests = interests;
+}
+
+- (NSString *)citizenship {
+    return _citizenship;
+}
+
+- (void)setCitizenship:(NSString *)citizenship {
+    _citizenship = citizenship;
 }
 
 @end
