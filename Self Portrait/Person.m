@@ -11,7 +11,7 @@
 @implementation Person 
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"There exists an excellent fellow by the name of %@. %@ has reached the ripe old age of %@. %@'s interests include %@. \n\n", [self name], [self name], [self age], [self name], [self interests]];
+    return [NSString stringWithFormat:@"\n\nThere exists an excellent fellow by the name of %@. %@ has reached the ripe old age of %@. %@'s interests include %@. %@ is a citizen of %@.\n\n", [self name], [self name], [self age], [self name], [self interests], [self name], [self citizenship]];
 }
 
 - (NSString *)name {

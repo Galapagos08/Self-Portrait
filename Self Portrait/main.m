@@ -15,6 +15,7 @@ int main(int argc, const char * argv[]) {
         [somePerson setName:@"Dan"];
         [somePerson setAge:@"42"];
         [somePerson setInterests:@"hiking, reading, and homebrewing"];
+        [somePerson setCitizenship:@"the United States and the United Kingdom"];
         
         NSLog(@"%@", somePerson);
     }
