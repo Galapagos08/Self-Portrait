@@ -11,7 +11,7 @@
 @implementation Person 
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"\n\nThere exists an excellent fellow by the name of %@. %@ has reached the ripe old age of %@. %@'s interests include %@. %@ is a citizen of %@.\n\n%@ has had a lot of dogs over the years. They include %@\n\n", [self name], [self name], [self age], [self name], [self interests], [self name], [self citizenship], [self name], [self dogs]];
+    return [NSString stringWithFormat:@"\n\nThere exists an excellent fellow by the name of %@. %@ has reached the ripe old age of %@. %@'s interests include %@. %@ is a citizen of %@. %@ has a daughter. Her name is %@.\n\n%@ has had a lot of dogs over the years. They include %@\n\n", [self name], [self name], [self age], [self name], [self interests], [self name], [self citizenship], [self name], [self daughter], [self name], [self dogs]];
 }
 
 - (NSString *)name {
@@ -53,4 +53,10 @@
 - (void)setDogs: (NSArray *)dogs {
     _dogs = dogs;
 }
+
+- (NSString *)daughter {
+    return @"Darwin";
+    
+}
+
 @end
